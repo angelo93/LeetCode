@@ -7,7 +7,7 @@ class Solution(object):
         :rtype result: List[int]
         """
 
-        compliment = {}  # dictionary of possible complimentary numbers
+        compliment = dict()  # dictionary of possible complimentary numbers
         result = list() # variable to be returned
 
         # For every index and number in list nums
