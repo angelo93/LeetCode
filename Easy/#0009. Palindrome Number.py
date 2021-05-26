@@ -6,18 +6,23 @@ class Solution:
         rtype result: bool
         '''
 
+        rev_num = int()
         result = bool()
 
-        # Check if num is less than 0 or ends in 0
-            # If so, result = False
-            # Reverse = -1
-        # else 
-            # Get reverse
-        
-        # Check if reverese = original
-            # If so, result = True
-            # If not, result = False
+        # Check edge cases
+        if x < 0 or x % 10 == 0:
+            result = False
+            rev_num = -1
+        else:
+            rev_num = self.getReverse(x)
+        # end if
 
+        # Check if reveresed num = original
+        if x == rev_num:
+            result = True
+        else:
+            result = False
+        # end if
 
         return result
     # end def isPalindrome
