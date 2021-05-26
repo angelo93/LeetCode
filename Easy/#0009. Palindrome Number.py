@@ -34,6 +34,7 @@ class Solution:
         '''
 
         rev_num = 0
+        num_to_add = int()
 
         # While x > 0
         while x > 0:
@@ -46,7 +47,7 @@ class Solution:
             # Update original number
             x = x // 10             # Remove current last number
         # end while
-        
+
         return rev_num
     # end def getReverse
 # end class Solution
