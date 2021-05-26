@@ -38,14 +38,14 @@ class Solution:
 
         # While x > 0
         while x > 0:
-            num_to_add = x % 10     # Isolate ones place
+            num_to_add = x % 10         # Isolate ones place
 
             # Update reversed number
-            rev_num = rev_num * 10  # Create new ones place
-            rev_num += num_to_add   # Add isolated number to ones place
+            rev_num = rev_num * 10      # Create new ones place
+            rev_num += num_to_add       # Add isolated number to ones place
             
             # Update original number
-            x = x // 10             # Remove current last number
+            x = x // 10                 # Remove current last number
         # end while
 
         return rev_num
