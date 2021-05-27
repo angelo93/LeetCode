@@ -16,7 +16,7 @@ class Solution:
             sign = 1
         # end if
 
-        result = abs(x)             # Get absolute value of x to elimnate leading 0s and negative sign
+        result = abs(x)             # Get absolute value of x to elimnate negative sign
         result = str(result)[::-1]  # Convert to string and reverse order
         result = int(result)        # Convert back to integer
         result = sign * result      # Multipliy by 1 or -1 accordingly
