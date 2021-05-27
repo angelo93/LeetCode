@@ -16,7 +16,6 @@ class Solution:
             rev_num = self.getReverse(x)
         # end if
 
-        # Check if reveresed num = original
         if x == rev_num:
             result = True
         else:
@@ -45,7 +44,7 @@ class Solution:
             rev_num += num_to_add       # Add isolated number to ones place
             
             # Update original number
-            x = x // 10                 # Remove current last number
+            x = x // 10                 # Remove current ones place
         # end while
 
         return rev_num
